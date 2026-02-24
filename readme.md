@@ -1,8 +1,8 @@
 # Task 4-4 — Fashion Multi-Label Classification REST API
 
-This project implements a **multi-label image classification system** using TensorFlow and Keras, deployed as a RESTful API with Flask.
+This project implements a multi-label image classification system using TensorFlow and Keras, deployed as a RESTful API with Flask.
 
-Unlike single-label classification, this model predicts **multiple attributes simultaneously** for each image.
+Unlike single-label classification, this model predicts multiple attributes simultaneously for each image.
 
 ---
 
@@ -15,16 +15,6 @@ Each fashion image may contain multiple labels, including:
 - Article Type (Tshirts, Jeans, Shoes, etc.)
 
 The model predicts all relevant labels for a given image using a sigmoid output layer.
-
----
-
-## Key Technical Differences (vs Single-Label)
-
-| Single-Label | Multi-Label |
-|--------------|-------------|
-| Softmax activation | Sigmoid activation |
-| Categorical Crossentropy | Binary Crossentropy |
-| One class per image | Multiple labels per image |
 
 ---
 
