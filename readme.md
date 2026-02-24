@@ -1,4 +1,4 @@
-# Task 4-4 — Fashion Multi-Label Classification REST API
+# Fashion Multi-Label Classification REST API
 
 This project implements a multi-label image classification system using TensorFlow and Keras, deployed as a RESTful API with Flask.
 
