@@ -1,0 +1,77 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# =========================
+# Virtual Environments
+# =========================
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Models (Do NOT upload)
+# =========================
+models/
+*.keras
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.weights
+saved_model/
+
+# =========================
+# Images (Remove all images)
+# =========================
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.bmp
+*.tiff
+
+# If you want to keep ONE sample folder, comment above and use:
+# !sample_images/
+
+# =========================
+# Datasets
+# =========================
+data/
+dataset/
+datasets/
+*.zip
+*.tar
+*.gz
+*.7z
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# macOS / Windows
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
