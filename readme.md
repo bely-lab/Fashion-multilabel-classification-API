@@ -2,10 +2,6 @@
 
 This project implements a multi-label image classification system using TensorFlow and Keras, deployed as a RESTful API with Flask.
 
-Unlike single-label classification, this model predicts multiple attributes simultaneously for each image.
-
----
-
 ## Project Overview
 
 Each fashion image may contain multiple labels, including:
@@ -15,8 +11,6 @@ Each fashion image may contain multiple labels, including:
 - Article Type (Tshirts, Jeans, Shoes, etc.)
 
 The model predicts all relevant labels for a given image using a sigmoid output layer.
-
----
 
 ## Dataset
 
@@ -29,27 +23,12 @@ Each image is associated with:
 
 Images and labels were processed to create multi-hot encoded targets.
 
-> Dataset is not included in this repository.
-
----
-
 ## Model Architecture
-
 - Pretrained Keras Application backbone (transfer learning)
 - GlobalAveragePooling2D
 - Dense hidden layer
-- Final Dense layer with **sigmoid activation**
-- Loss: **Binary Cross-Entropy**
-
-### Why Sigmoid?
-
-Because each output label is independent and can be simultaneously active.
-
-### Why Binary Cross-Entropy?
-
-Because each label represents an independent binary classification problem.
-
----
+- Final Dense layer with sigmoid activation
+- Loss: Binary Cross-Entropy
 
 ## REST API Features
 
